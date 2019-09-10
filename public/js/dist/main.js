@@ -58,6 +58,6 @@
     return __webpack_require__(__webpack_require__.s = "./assets/js/main.js");
 })({
     "./assets/js/main.js": function(module, exports) {
-        eval("console.log('hi');\n\n//# sourceURL=webpack:///./assets/js/main.js?");
+        eval("const names = ['pat', 'doe'];\nnames.push('jane');\nconsole.log(names);\n\n//# sourceURL=webpack:///./assets/js/main.js?");
     }
 });
