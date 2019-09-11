@@ -58,6 +58,6 @@
     return __webpack_require__(__webpack_require__.s = "./assets/js/main.js");
 })({
     "./assets/js/main.js": function(module, exports) {
-        eval("const names = ['pat', 'doe'];\nnames.push('jane');\nconsole.log(names);\n\n//# sourceURL=webpack:///./assets/js/main.js?");
+        eval("// function userName(name) {\n//     return name;\n// }\n// var userName = (name, lastName) => name + lastName;\nvar userName = () => 'name + lastName';\n\nconsole.log(userName(\"hi\", ' szhdo'));\n\n//# sourceURL=webpack:///./assets/js/main.js?");
     }
 });
