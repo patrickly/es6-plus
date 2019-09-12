@@ -58,6 +58,6 @@
     return __webpack_require__(__webpack_require__.s = "./assets/js/main.js");
 })({
     "./assets/js/main.js": function(module, exports) {
-        eval("// function userName(name) {\n//     return name;\n// }\n// var userName = (name, lastName) => name + lastName;\nvar userName = () => 'name + lastName';\n\nconsole.log(userName(\"hi\", ' szhdo'));\n\n//# sourceURL=webpack:///./assets/js/main.js?");
+        eval('var name = \'Pat\';\nvar lastName = \'Ly\';\nconsole.log("the user\'s name: ".concat(name, " ").concat(lastName));\n\nconst store = (name, address, state, zipcode) => {\n  return "".concat(name, " is located at ").concat(address, " in ").concat(state, " with zipcode of ").concat(zipcode);\n};\n\nvar a = store(\'Gucci\', \'52 Park Avenue\', \'New York\', 11101);\nconsole.log(a);\n\n//# sourceURL=webpack:///./assets/js/main.js?');
     }
 });

@@ -1,9 +1,11 @@
-// function userName(name) {
-//     return name;
-// }
+var name = 'Pat';
+var lastName = 'Ly';
 
-// var userName = (name, lastName) => name + lastName;
+console.log(`the user's name: ${name} ${lastName}`);
 
-var userName = () => 'name + lastName';
+const store = (name, address, state, zipcode) => {
+	return `${name} is located at ${address} in ${state} with zipcode of ${zipcode}`;
+};
 
-console.log(userName(`hi`, ' szhdo'));
+var a = store('Gucci', '52 Park Avenue', 'New York', 11101);
+console.log(a);
