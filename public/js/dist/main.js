@@ -58,6 +58,6 @@
     return __webpack_require__(__webpack_require__.s = "./assets/js/main.js");
 })({
     "./assets/js/main.js": function(module, exports) {
-        eval('var name = \'Pat\';\nvar lastName = \'Ly\';\nconsole.log("the user\'s name: ".concat(name, " ").concat(lastName));\n\nconst store = (name, address, state, zipcode) => {\n  return "".concat(name, " is located at ").concat(address, " in ").concat(state, " with zipcode of ").concat(zipcode);\n};\n\nvar a = store(\'Gucci\', \'52 Park Avenue\', \'New York\', 11101);\nconsole.log(a);\n\n//# sourceURL=webpack:///./assets/js/main.js?');
+        eval('const dealership = function dealership(name) {\n  let totalCars = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 3000;\n  return "".concat(name, " is a minimum of ").concat(totalCars, " available cars at all times");\n}; // var emp = dealership(\'Empire\', 2000);\n\n\nvar emp = dealership(\'Empire\');\nconsole.log(emp);\n\n//# sourceURL=webpack:///./assets/js/main.js?');
     }
 });

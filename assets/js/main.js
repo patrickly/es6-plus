@@ -1,11 +1,9 @@
-var name = 'Pat';
-var lastName = 'Ly';
-
-console.log(`the user's name: ${name} ${lastName}`);
-
-const store = (name, address, state, zipcode) => {
-	return `${name} is located at ${address} in ${state} with zipcode of ${zipcode}`;
+const dealership = (name, totalCars = 3000) => {
+	return `${name} is a minimum of ${totalCars} available cars at all times`;
 };
 
-var a = store('Gucci', '52 Park Avenue', 'New York', 11101);
-console.log(a);
+// var emp = dealership('Empire', 2000);
+
+var emp = dealership('Empire');
+
+console.log(emp);
