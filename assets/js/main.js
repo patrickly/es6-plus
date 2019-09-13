@@ -1,14 +1,7 @@
-// const userNames = (a, b, c, d, e, f) => {
-// 	const names = [a, b, c, d, e, f];
+const clients = ['google', 'facebook', 'kmart'];
+const friends = ['pat', 'mike', 'matt'];
 
-// 	console.log(names);
-// };
+// const listOfNames = [...clients, friends];
+const listOfNames = [...clients, ...friends];
 
-const userNames = (...names) => {
-	// var names = [every argument in this function]
-	// an array of every elements in this function assigned to the names variable
-	console.log(names);
-};
-// userNames('Pat', 'Joe', 'John', 'Jane', 'Fred', 'Stef');
-
-userNames('Pat', 'Joe', 'John', 'Jane', 'Fred', 'Stef', 'Mike', 'Jen', 'Kobe');
+console.log(listOfNames);
