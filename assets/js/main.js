@@ -1,9 +1,14 @@
-const dealership = (name, totalCars = 3000) => {
-	return `${name} is a minimum of ${totalCars} available cars at all times`;
+// const userNames = (a, b, c, d, e, f) => {
+// 	const names = [a, b, c, d, e, f];
+
+// 	console.log(names);
+// };
+
+const userNames = (...names) => {
+	// var names = [every argument in this function]
+	// an array of every elements in this function assigned to the names variable
+	console.log(names);
 };
+// userNames('Pat', 'Joe', 'John', 'Jane', 'Fred', 'Stef');
 
-// var emp = dealership('Empire', 2000);
-
-var emp = dealership('Empire');
-
-console.log(emp);
+userNames('Pat', 'Joe', 'John', 'Jane', 'Fred', 'Stef', 'Mike', 'Jen', 'Kobe');

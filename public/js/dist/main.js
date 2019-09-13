@@ -58,6 +58,6 @@
     return __webpack_require__(__webpack_require__.s = "./assets/js/main.js");
 })({
     "./assets/js/main.js": function(module, exports) {
-        eval('const dealership = function dealership(name) {\n  let totalCars = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 3000;\n  return "".concat(name, " is a minimum of ").concat(totalCars, " available cars at all times");\n}; // var emp = dealership(\'Empire\', 2000);\n\n\nvar emp = dealership(\'Empire\');\nconsole.log(emp);\n\n//# sourceURL=webpack:///./assets/js/main.js?');
+        eval("// const userNames = (a, b, c, d, e, f) => {\n// \tconst names = [a, b, c, d, e, f];\n// \tconsole.log(names);\n// };\nconst userNames = function userNames() {\n  for (var _len = arguments.length, names = new Array(_len), _key = 0; _key < _len; _key++) {\n    names[_key] = arguments[_key];\n  }\n\n  // var names = [every argument in this function]\n  // an array of every elements in this function assigned to the names variable\n  console.log(names);\n}; // userNames('Pat', 'Joe', 'John', 'Jane', 'Fred', 'Stef');\n\n\nuserNames('Pat', 'Joe', 'John', 'Jane', 'Fred', 'Stef', 'Mike', 'Jen', 'Kobe');\n\n//# sourceURL=webpack:///./assets/js/main.js?");
     }
 });
