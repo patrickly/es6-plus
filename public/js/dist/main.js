@@ -58,6 +58,6 @@
     return __webpack_require__(__webpack_require__.s = "./assets/js/main.js");
 })({
     "./assets/js/main.js": function(module, exports) {
-        eval("\n\n//# sourceURL=webpack:///./assets/js/main.js?");
+        eval("var a = 2;\n\n//# sourceURL=webpack:///./assets/js/main.js?");
     }
 });
