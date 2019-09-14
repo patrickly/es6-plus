@@ -58,6 +58,6 @@
     return __webpack_require__(__webpack_require__.s = "./assets/js/main.js");
 })({
     "./assets/js/main.js": function(module, exports) {
-        eval("var cars = ['honda', 'bmw'];\nvar userInfo = {\n  name: 'Patrick',\n  lastName: 'Ly',\n  age: 28,\n  // cars: cars\n  cars\n}; // var { name, lastName, age } = userInfo;\n// console.log(name, age, lastName);\n\nconsole.log(userInfo.cars);\n/* \nvar userData = (data) => {\n\tvar name = data.name;\n\tvar lastName = data.lastName;\n\tvar age = data.age;\n\tconsole.log(`User: ${name} ${lastName} is ${age} years old`);\n}; */\n\nvar userData = (_ref) => {\n  let {\n    name,\n    lastName,\n    age\n  } = _ref;\n  console.log(\"User: \".concat(name, \" \").concat(lastName, \" is \").concat(age, \" years old\")); // console.log(name, age);\n}; // userData(userInfo);\n\n\nuserData(userInfo);\n\n//# sourceURL=webpack:///./assets/js/main.js?");
+        eval("var cars = ['honda', 'bmw', 'benz']; // var johnyCar = cars[0];\n// var joeCar = cars[1];\n// var jamesCar = cars[2];\n\nvar [johnyCr, joeCar, jamesCar] = cars;\nconsole.log(jamesCar);\n\n//# sourceURL=webpack:///./assets/js/main.js?");
     }
 });
