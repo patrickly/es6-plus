@@ -1,9 +1,9 @@
-var cars = ['honda', 'bmw', 'benz'];
+var users = ['pat', 'joe', 'barbara'];
 
-// var johnyCar = cars[0];
-// var joeCar = cars[1];
-// var jamesCar = cars[2];
+// for (var i = 0; i < users.length; i++) {
+// 	console.log(users[i]);
+// }
 
-var [johnyCr, joeCar, jamesCar] = cars;
-
-console.log(jamesCar);
+users.forEach(user => {
+	console.log(user);
+});

@@ -58,6 +58,6 @@
     return __webpack_require__(__webpack_require__.s = "./assets/js/main.js");
 })({
     "./assets/js/main.js": function(module, exports) {
-        eval("var cars = ['honda', 'bmw', 'benz']; // var johnyCar = cars[0];\n// var joeCar = cars[1];\n// var jamesCar = cars[2];\n\nvar [johnyCr, joeCar, jamesCar] = cars;\nconsole.log(jamesCar);\n\n//# sourceURL=webpack:///./assets/js/main.js?");
+        eval("var users = ['pat', 'joe', 'barbara']; // for (var i = 0; i < users.length; i++) {\n// \tconsole.log(users[i]);\n// }\n\nusers.forEach(user => {\n  console.log(user);\n});\n\n//# sourceURL=webpack:///./assets/js/main.js?");
     }
 });
