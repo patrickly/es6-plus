@@ -58,6 +58,6 @@
     return __webpack_require__(__webpack_require__.s = "./assets/js/main.js");
 })({
     "./assets/js/main.js": function(module, exports) {
-        eval("var users = [{\n  name: 'Pat',\n  age: 28\n}, {\n  name: 'Matt',\n  age: 20\n}, {\n  name: 'Barbara',\n  age: 27\n}];\nvar userNames = users.map(user => {\n  return user.name;\n});\nconsole.log(userNames);\n\n//# sourceURL=webpack:///./assets/js/main.js?");
+        eval("var users = [{\n  name: 'Pat',\n  age: 43\n}, {\n  name: 'Matt',\n  age: 10\n}, {\n  name: 'James',\n  age: 18\n}, {\n  name: 'Barbara',\n  age: 17\n}]; // var newData = users.filter(user => {\n// \treturn user.age == 20;\n// });\n\nvar newData = users.filter(user => {\n  // var name = user.name.toLowerCase();\n  // name = name.startsWith('ba');\n  // return name;\n  return user.age <= 18;\n});\nconsole.log(newData);\n\n//# sourceURL=webpack:///./assets/js/main.js?");
     }
 });

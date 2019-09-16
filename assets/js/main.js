@@ -1,11 +1,20 @@
 var users = [
-	{ name: 'Pat', age: 28 },
-	{ name: 'Matt', age: 20 },
-	{ name: 'Barbara', age: 27 }
+	{ name: 'Pat', age: 43 },
+	{ name: 'Matt', age: 10 },
+	{ name: 'James', age: 18 },
+	{ name: 'Barbara', age: 17 }
 ];
 
-var userNames = users.map(user => {
-	return user.name;
+// var newData = users.filter(user => {
+// 	return user.age == 20;
+// });
+
+var newData = users.filter(user => {
+	// var name = user.name.toLowerCase();
+	// name = name.startsWith('ba');
+	// return name;
+
+	return user.age <= 18;
 });
 
-console.log(userNames);
+console.log(newData);
