@@ -1,7 +1,7 @@
 var users = [
 	{ name: 'Pat', age: 43 },
 	{ name: 'Matt', age: 10 },
-	{ name: 'James', age: 18 },
+	{ name: 'Pat', age: 18 },
 	{ name: 'Barbara', age: 17 }
 ];
 
@@ -9,12 +9,12 @@ var users = [
 // 	return user.age == 20;
 // });
 
-var newData = users.filter(user => {
+var newData = users.find(user => {
 	// var name = user.name.toLowerCase();
 	// name = name.startsWith('ba');
 	// return name;
 
-	return user.age <= 18;
+	return user.age == 18 && user.name == 'Pat';
 });
 
 console.log(newData);
