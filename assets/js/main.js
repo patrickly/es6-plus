@@ -1,9 +1,11 @@
-var users = ['pat', 'joe', 'barbara'];
+var users = [
+	{ name: 'Pat', age: 28 },
+	{ name: 'Matt', age: 20 },
+	{ name: 'Barbara', age: 27 }
+];
 
-// for (var i = 0; i < users.length; i++) {
-// 	console.log(users[i]);
-// }
-
-users.forEach(user => {
-	console.log(user);
+var userNames = users.map(user => {
+	return user.name;
 });
+
+console.log(userNames);

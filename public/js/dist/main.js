@@ -58,6 +58,6 @@
     return __webpack_require__(__webpack_require__.s = "./assets/js/main.js");
 })({
     "./assets/js/main.js": function(module, exports) {
-        eval("var users = ['pat', 'joe', 'barbara']; // for (var i = 0; i < users.length; i++) {\n// \tconsole.log(users[i]);\n// }\n\nusers.forEach(user => {\n  console.log(user);\n});\n\n//# sourceURL=webpack:///./assets/js/main.js?");
+        eval("var users = [{\n  name: 'Pat',\n  age: 28\n}, {\n  name: 'Matt',\n  age: 20\n}, {\n  name: 'Barbara',\n  age: 27\n}];\nvar userNames = users.map(user => {\n  return user.name;\n});\nconsole.log(userNames);\n\n//# sourceURL=webpack:///./assets/js/main.js?");
     }
 });
