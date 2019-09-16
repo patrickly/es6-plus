@@ -9,12 +9,22 @@ var users = [
 // 	return user.age == 20;
 // });
 
-var newData = users.find(user => {
-	// var name = user.name.toLowerCase();
-	// name = name.startsWith('ba');
-	// return name;
+// var newData = users.every(user => {
+// 	// var name = user.name.toLowerCase();
+// 	// name = name.startsWith('ba');
+// 	// return name;
 
-	return user.age == 18 && user.name == 'Pat';
+// 	return user.age >= 21;
+// });
+
+var newData = users.some(user => {
+	return user.age >= 21;
 });
 
 console.log(newData);
+
+if (newData) {
+	console.log('some are old enough to drink');
+} else {
+	console.log('sorry only a few are able to drink');
+}

@@ -58,6 +58,6 @@
     return __webpack_require__(__webpack_require__.s = "./assets/js/main.js");
 })({
     "./assets/js/main.js": function(module, exports) {
-        eval("var users = [{\n  name: 'Pat',\n  age: 43\n}, {\n  name: 'Matt',\n  age: 10\n}, {\n  name: 'Pat',\n  age: 18\n}, {\n  name: 'Barbara',\n  age: 17\n}]; // var newData = users.filter(user => {\n// \treturn user.age == 20;\n// });\n\nvar newData = users.find(user => {\n  // var name = user.name.toLowerCase();\n  // name = name.startsWith('ba');\n  // return name;\n  return user.age == 18 && user.name == 'Pat';\n});\nconsole.log(newData);\n\n//# sourceURL=webpack:///./assets/js/main.js?");
+        eval("var users = [{\n  name: 'Pat',\n  age: 43\n}, {\n  name: 'Matt',\n  age: 10\n}, {\n  name: 'Pat',\n  age: 18\n}, {\n  name: 'Barbara',\n  age: 17\n}]; // var newData = users.filter(user => {\n// \treturn user.age == 20;\n// });\n// var newData = users.every(user => {\n// \t// var name = user.name.toLowerCase();\n// \t// name = name.startsWith('ba');\n// \t// return name;\n// \treturn user.age >= 21;\n// });\n\nvar newData = users.some(user => {\n  return user.age >= 21;\n});\nconsole.log(newData);\n\nif (newData) {\n  console.log('some are old enough to drink');\n} else {\n  console.log('sorry only a few are able to drink');\n}\n\n//# sourceURL=webpack:///./assets/js/main.js?");
     }
 });
