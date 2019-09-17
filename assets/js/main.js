@@ -1,30 +1,43 @@
-var users = [
-	{ name: 'Pat', age: 43 },
-	{ name: 'Matt', age: 10 },
-	{ name: 'Pat', age: 18 },
-	{ name: 'Barbara', age: 17 }
+// get product
+// get price
+// print to the screen the price
+
+var products = [
+	{
+		id: 1,
+		title: 'Sneakers',
+		price: 300
+	},
+	{
+		id: 2,
+		title: 'yeezy',
+		price: 500
+	}
 ];
 
-// var newData = users.filter(user => {
-// 	return user.age == 20;
-// });
-
-// var newData = users.every(user => {
-// 	// var name = user.name.toLowerCase();
-// 	// name = name.startsWith('ba');
-// 	// return name;
-
-// 	return user.age >= 21;
-// });
-
-var newData = users.some(user => {
-	return user.age >= 21;
+const getProducts = new Promise((resolve, reject) => {
+	setTimeout(() => {
+		if (products.length >= 1) {
+			resolve(products);
+		} else {
+			reject(`Error: it returned back that there's no products available`);
+		}
+	}, 2000);
 });
 
-console.log(newData);
-
-if (newData) {
-	console.log('some are old enough to drink');
-} else {
-	console.log('sorry only a few are able to drink');
-}
+getProducts
+	.then(products => {
+		console.log('products ', products);
+		return products[0];
+	})
+	.then(product => {
+		console.log('product ', product);
+		return product.price;
+	})
+	.then(price => {
+		console.log('price ', price);
+		return price;
+	})
+	.catch(error => {
+		console.log(error);
+	});
