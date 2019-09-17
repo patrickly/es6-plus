@@ -58,6 +58,6 @@
     return __webpack_require__(__webpack_require__.s = "./assets/js/main.js");
 })({
     "./assets/js/main.js": function(module, exports) {
-        eval("const array = [1, 2, 3, 4, 5, 6];\nconsole.log(array.includes(2));\n\nif (array.includes(22)) {\n  console.log('yes we have the number 6');\n} else {\n  console.log('sorry not here');\n}\n\n//# sourceURL=webpack:///./assets/js/main.js?");
+        eval("// console.log(Math.pow(2, 3));\nconsole.log(2 ** 4);\n\n//# sourceURL=webpack:///./assets/js/main.js?");
     }
 });
