@@ -58,6 +58,6 @@
     return __webpack_require__(__webpack_require__.s = "./assets/js/main.js");
 })({
     "./assets/js/main.js": function(module, exports) {
-        eval("// console.log(Math.pow(2, 3));\nconsole.log(2 ** 4);\n\n//# sourceURL=webpack:///./assets/js/main.js?");
+        eval("const user = {\n  id: 345,\n  name: 'pat',\n  age: 28,\n  location: 'california'\n}; // console.log(Object.values(user));\n\nconsole.table(Object.values(user));\n\n//# sourceURL=webpack:///./assets/js/main.js?");
     }
 });
