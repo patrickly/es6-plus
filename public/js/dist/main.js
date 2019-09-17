@@ -58,6 +58,6 @@
     return __webpack_require__(__webpack_require__.s = "./assets/js/main.js");
 })({
     "./assets/js/main.js": function(module, exports) {
-        eval("const user = {\n  id: 345,\n  name: 'pat',\n  age: 28,\n  location: 'california'\n}; // console.log(Object.values(user));\n\nconsole.table(Object.entries(user));\n\nfor (let [key, value] of Object.entries(user)) {\n  console.log(\"key: \".concat(key, \"  value: \").concat(value));\n}\n\n//# sourceURL=webpack:///./assets/js/main.js?");
+        eval("const letter = 'A';\nconsole.log(letter.padStart(10));\nconsole.log(letter.padStart(10, '*'));\nconsole.log(letter.padEnd(10, '*'));\n\n//# sourceURL=webpack:///./assets/js/main.js?");
     }
 });
