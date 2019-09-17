@@ -58,6 +58,6 @@
     return __webpack_require__(__webpack_require__.s = "./assets/js/main.js");
 })({
     "./assets/js/main.js": function(module, exports) {
-        eval("// get product\n// get price\n// print to the screen the price\nvar products = [{\n  id: 1,\n  title: 'Sneakers',\n  price: 300\n}, {\n  id: 2,\n  title: 'yeezy',\n  price: 500\n}];\nconst getProducts = new Promise((resolve, reject) => {\n  setTimeout(() => {\n    if (products.length >= 1) {\n      resolve(products);\n    } else {\n      reject(\"Error: it returned back that there's no products available\");\n    }\n  }, 2000);\n});\ngetProducts.then(products => {\n  console.log('products ', products);\n  return products[0];\n}).then(product => {\n  console.log('product ', product);\n  return product.price;\n}).then(price => {\n  console.log('price ', price);\n  return price;\n}).catch(error => {\n  console.log(error);\n});\n\n//# sourceURL=webpack:///./assets/js/main.js?");
+        eval("const array = [1, 2, 3, 4, 5, 6];\nconsole.log(array.includes(2));\n\nif (array.includes(22)) {\n  console.log('yes we have the number 6');\n} else {\n  console.log('sorry not here');\n}\n\n//# sourceURL=webpack:///./assets/js/main.js?");
     }
 });
