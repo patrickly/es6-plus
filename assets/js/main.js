@@ -6,4 +6,8 @@ const user = {
 };
 
 // console.log(Object.values(user));
-console.table(Object.values(user));
+console.table(Object.entries(user));
+
+for (let [key, value] of Object.entries(user)) {
+	console.log(`key: ${key}  value: ${value}`);
+}
