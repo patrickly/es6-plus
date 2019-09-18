@@ -1,20 +1,13 @@
-let user = {
-	fname: 'John',
-	lname: 'Doe',
-	age: 22,
-	phone: '123-456-7890'
-};
+const steps = [
+	new Promise(resolve => resolve('We wake up')),
+	new Promise(resolve => resolve('Eat breakfast')),
+	new Promise(resolve => resolve('Code'))
+];
 
-let car = {
-	title: 'benz',
-	price: 100000,
-	country: 'germany'
-};
+async function runSteps() {
+	for await (const step of steps) {
+		console.log(step);
+	}
+}
 
-const newObject = {
-	...user,
-	...car
-};
-
-console.log(newObject);
-console.table(newObject);
+runSteps();
