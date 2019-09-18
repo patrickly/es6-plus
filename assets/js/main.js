@@ -2,16 +2,16 @@
 
 const getUser = fname => {
 	var user = {
-		id: 3,
+		id: 6,
 		fname: 'Jane'
 	};
 	return new Promise((resolve, reject) => {
-		console.log('getting user');
 		setTimeout(() => {
+			console.log('getting user');
 			if (fname == user.fname) {
 				resolve(user);
 			} else {
-				reject('Error: user not found');
+				reject('user not found');
 			}
 		}, 2000);
 	});
@@ -28,17 +28,29 @@ const getTweet = id => {
 			if (tweet.user_id === id) {
 				resolve(tweet);
 			} else {
-				reject('Error: no tweets found for this user');
+				reject('no tweets found for this user');
 			}
 		}, 2000);
 	});
 };
 
 const printUserTweet = async fname => {
-	const user = await getUser(fname);
-	const tweet = await getTweet(user.id);
-
-	return `${user.fname} ${tweet.post}`;
+	try {
+		const tweet = await getTweet(user.id);
+		const user = await getUser(fname);
+		console.log(`${user.fname} ${tweet.post}`);
+		return `${user.fname} ${tweet.post}`;
+	} catch (error) {
+		console.log(`Error: ${error}`);
+	}
 };
 
-console.log(printUserTweet('Jane'));
+// printUserTweet('Jane')
+// 	.then(value => {
+// 		console.log(value);
+// 	})
+// 	.catch(error => {
+// 		console.log(`Error: ${error}`);
+//     });
+
+printUserTweet('Jane');
