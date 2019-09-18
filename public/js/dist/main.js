@@ -58,6 +58,6 @@
     return __webpack_require__(__webpack_require__.s = "./assets/js/main.js");
 })({
     "./assets/js/main.js": function(module, exports) {
-        eval("const letter = 'A';\nconsole.log(letter.padStart(10));\nconsole.log(letter.padStart(10, '*'));\nconsole.log(letter.padEnd(10, '*'));\n\n//# sourceURL=webpack:///./assets/js/main.js?");
+        eval("var product = {\n  title: 'yeezy',\n  price: 360,\n\n  set discount(x) {\n    this.d = x;\n  },\n\n  get discount() {\n    return this.d;\n  }\n\n};\nvar product2 = Object.defineProperties({}, Object.getOwnPropertyDescriptors(product));\nconsole.log(product2);\nvar obj = {\n  a: 1,\n  b: 2,\n\n  set discount(x) {\n    this.d = x;\n  },\n\n  get discount() {\n    return this.d;\n  }\n\n};\nvar copy = Object.assign({}, obj);\nconsole.log(copy);\n\n//# sourceURL=webpack:///./assets/js/main.js?");
     }
 });
