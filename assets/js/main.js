@@ -5,9 +5,16 @@ let user = {
 	phone: '123-456-7890'
 };
 
-// let { fname, lname } = user;
-// console.log(`${fname} ${lname}`);
+let car = {
+	title: 'benz',
+	price: 100000,
+	country: 'germany'
+};
 
-let { fname, lname, ...others } = user;
-console.log(`${fname} ${lname}`);
-console.log(others);
+const newObject = {
+	...user,
+	...car
+};
+
+console.log(newObject);
+console.table(newObject);
