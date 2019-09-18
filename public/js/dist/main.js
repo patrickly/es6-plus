@@ -58,6 +58,6 @@
     return __webpack_require__(__webpack_require__.s = "./assets/js/main.js");
 })({
     "./assets/js/main.js": function(module, exports) {
-        eval("// const names = [\n//     ['joe', 'billy'],\n//     ['cindy', 'jenny']\n// ];\nconst names = [['joe', 'billy'], ['cindy', 'jenny', [23, 4, 56, 7, [1, 2, 3, 4, [1, 2, 3, 4, [1, 2, 3, 4]]]]]];\nconsole.log(names.flat());\nconsole.log(names.flat(3));\nconsole.log(names.flat(Infinity));\n\n//# sourceURL=webpack:///./assets/js/main.js?");
+        eval("const names = ['Pat is at the store', 'Billy is programming']; // let newArray = names.map(value => value.split(' '));\n\nlet newArray = names.flatMap(value => value.split(' '));\nconsole.log(newArray);\n\n//# sourceURL=webpack:///./assets/js/main.js?");
     }
 });
