@@ -58,6 +58,6 @@
     return __webpack_require__(__webpack_require__.s = "./assets/js/main.js");
 })({
     "./assets/js/main.js": function(module, exports) {
-        eval("const names = ['Pat is at the store', 'Billy is programming']; // let newArray = names.map(value => value.split(' '));\n\nlet newArray = names.flatMap(value => value.split(' '));\nconsole.log(newArray);\n\n//# sourceURL=webpack:///./assets/js/main.js?");
+        eval("// const user = '         Pat';\nconst user = 'Pat      ';\nconsole.log(user);\nconsole.log(user.trimStart());\nconsole.log(user.trimEnd());\n\n//# sourceURL=webpack:///./assets/js/main.js?");
     }
 });

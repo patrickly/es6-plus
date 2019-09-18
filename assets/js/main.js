@@ -1,6 +1,6 @@
-const names = ['Pat is at the store', 'Billy is programming'];
+// const user = '         Pat';
+const user = 'Pat      ';
 
-// let newArray = names.map(value => value.split(' '));
-let newArray = names.flatMap(value => value.split(' '));
-
-console.log(newArray);
+console.log(user);
+console.log(user.trimStart());
+console.log(user.trimEnd());
