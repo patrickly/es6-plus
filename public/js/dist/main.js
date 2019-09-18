@@ -58,6 +58,6 @@
     return __webpack_require__(__webpack_require__.s = "./assets/js/main.js");
 })({
     "./assets/js/main.js": function(module, exports) {
-        eval("// const user = '         Pat';\nconst user = 'Pat      ';\nconsole.log(user);\nconsole.log(user.trimStart());\nconsole.log(user.trimEnd());\n\n//# sourceURL=webpack:///./assets/js/main.js?");
+        eval("const printName = () => {\n  console.log('pat');\n};\n\nconsole.log(printName.toString());\n\n//# sourceURL=webpack:///./assets/js/main.js?");
     }
 });

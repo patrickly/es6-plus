@@ -1,6 +1,5 @@
-// const user = '         Pat';
-const user = 'Pat      ';
+const printName = () => {
+	console.log('pat');
+};
 
-console.log(user);
-console.log(user.trimStart());
-console.log(user.trimEnd());
+console.log(printName.toString());
